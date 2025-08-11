@@ -12,7 +12,8 @@ namespace HR.Controllers
         private static List<SHOP> shop = new List<SHOP>
         {
             new SHOP  {Item  =1 , name = "Biscuit" , quantity = 100},
-            new SHOP {Item  =2 , name = "Chips" , quantity = 150}
+            new SHOP {Item  =2 , name = "Chips" , quantity = 150},
+            new SHOP {Item  =3 , name = "tea" , quantity = 350}
         };
 
 

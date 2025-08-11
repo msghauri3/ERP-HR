@@ -447,23 +447,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BD\\.nuget\\packages\\": {},
+    "C:\\Users\\Hafiz Muhammad Talha\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\BD\\Source\\Repos\\ERP-HR\\HR\\HR.csproj",
+      "projectUniqueName": "D:\\ReactJS\\ERP-HR\\HR\\HR.csproj",
       "projectName": "HR",
-      "projectPath": "E:\\Users\\BD\\Source\\Repos\\ERP-HR\\HR\\HR.csproj",
-      "packagesPath": "C:\\Users\\BD\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\BD\\Source\\Repos\\ERP-HR\\HR\\obj\\",
+      "projectPath": "D:\\ReactJS\\ERP-HR\\HR\\HR.csproj",
+      "packagesPath": "C:\\Users\\Hafiz Muhammad Talha\\.nuget\\packages\\",
+      "outputPath": "D:\\ReactJS\\ERP-HR\\HR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\BD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hafiz Muhammad Talha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -471,6 +472,7 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },

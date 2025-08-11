@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HR.Models.Configuration>
+
+@{
+    ViewData["Title"] = "Configurations";
+}
+
+<h1>Configurations</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>UID</th>
+            <th>Config Key</th>
+            <th>Config Value</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Uid</td>
+                <td>@item.ConfigKey</td>
+                <td>@item.ConfigValue</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Uid">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Create New</a>

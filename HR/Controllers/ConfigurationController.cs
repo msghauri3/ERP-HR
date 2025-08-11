@@ -116,6 +116,20 @@ namespace HR.Controllers
             return result;
         }
 
+        [HttpGet("gender")]
+        public async Task<ActionResult<IEnumerable<Configuration>>> GetGender()
+        {
+            var result = await _context.Configurations
+                .Where(c => c.ConfigKey == "Gender")
+                .ToListAsync();
+
+            if (!result.Any())
+            {
+                return NotFound();
+            }
+
+            return result;
+        }
 
 
 

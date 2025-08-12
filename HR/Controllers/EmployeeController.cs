@@ -53,5 +53,18 @@ namespace HR.Controllers
             employees.Remove(employee);
             return NoContent();
         }
+
+        [HttpGet("Name")]
+        public ActionResult<IEnumerable<Employee1>> GetGender()
+        {
+            var result = employees.Where(e => e.Designation == "Developer").ToList();
+
+            if (!result.Any())
+            {
+                return NotFound();
+            }
+
+            return result;
+        }
     }
 }

@@ -17,17 +17,17 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HR
 build_property.RootNamespace = HR
-build_property.ProjectDir = D:\Dotnet\Core\HR\HR\
+build_property.ProjectDir = D:\ReactJS\ERP-HR\ERP-HR\HR\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Dotnet\Core\HR\HR
+build_property.MSBuildProjectDirectory = D:\ReactJS\ERP-HR\ERP-HR\HR
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Dotnet/Core/HR/HR/Views/Configuration/Details.cshtml]
+[D:/ReactJS/ERP-HR/ERP-HR/HR/Views/Configuration/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlndXJhdGlvblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

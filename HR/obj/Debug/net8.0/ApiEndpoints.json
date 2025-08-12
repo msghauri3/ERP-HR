@@ -169,6 +169,26 @@
     ]
   },
   {
+    "ContainingType": "HR.Controllers.CRUDController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/CRUD",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HR.Models.Employee, HR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "HR.Controllers.EmployeeController",
     "Method": "GetAll",
     "RelativePath": "api/Employee",
@@ -178,7 +198,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HR.Model.Employee, HR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HR.Model.Employee1, HR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -198,13 +218,13 @@
     "Parameters": [
       {
         "Name": "employee",
-        "Type": "HR.Model.Employee",
+        "Type": "HR.Model.Employee1",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "HR.Model.Employee",
+        "Type": "HR.Model.Employee1",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -230,7 +250,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "HR.Model.Employee",
+        "Type": "HR.Model.Employee1",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -13,6 +13,8 @@ builder.Services.AddDbContext<PayrollContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
+
+
 var app = builder.Build(); // 2️⃣ Build after all services are added
 
 // Configure middleware
@@ -21,6 +23,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+
+
 
 app.UseAuthorization();
 

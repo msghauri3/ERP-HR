@@ -286,10 +286,10 @@
         }
       }
     },
-    "/api/Employee": {
+    "/api/CRUD": {
       "get": {
         "tags": [
-          "Employee"
+          "CRUD"
         ],
         "responses": {
           "200": {
@@ -322,6 +322,44 @@
             }
           }
         }
+      }
+    },
+    "/api/Employee": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Employee1"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Employee1"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Employee1"
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       "post": {
         "tags": [
@@ -331,17 +369,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Employee"
+                "$ref": "#/components/schemas/Employee1"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Employee"
+                "$ref": "#/components/schemas/Employee1"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Employee"
+                "$ref": "#/components/schemas/Employee1"
               }
             }
           }
@@ -352,17 +390,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               }
             }
@@ -392,17 +430,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Employee"
+                  "$ref": "#/components/schemas/Employee1"
                 }
               }
             }
@@ -699,6 +737,143 @@
         "additionalProperties": false
       },
       "Employee": {
+        "required": [
+          "employeeID"
+        ],
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employeeID": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string"
+          },
+          "employeeName": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cnic": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fatherName": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dob": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dateOfJoining": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "employeeStatus": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedOn": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "details": {
+            "type": "string",
+            "nullable": true
+          },
+          "project": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "carryForwardLeaves": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "year2022": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "year2023": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "adjustedAjusted": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "year2024": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "carryForwardLeaves1": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "year2023New": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "basicSalary": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "applyTax": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Employee1": {
         "type": "object",
         "properties": {
           "id": {

@@ -9,23 +9,23 @@ namespace HR.Controllers
     public class EmployeeController : ControllerBase
     {
         // In-memory employees list
-        private static List<Employee> employees = new List<Employee>
+        private static List<Employee1> employees = new List<Employee1>
         {
-            new Employee { Id = 1, Name = "Qasim", Salary = 20000, Designation = "Developer" },
-            new Employee { Id = 2, Name = "Sindhu", Salary = 30000, Designation = "Developer" },
-            new Employee { Id = 3, Name = "Tatheer", Salary = 40000, Designation = "Developer" }
+            new Employee1 { Id = 1, Name = "Qasim", Salary = 20000, Designation = "Developer" },
+            new Employee1 { Id = 2, Name = "Sindhu", Salary = 30000, Designation = "Developer" },
+            new Employee1 { Id = 3, Name = "Tatheer", Salary = 40000, Designation = "Developer" }
         };
 
         // GET: api/employees
         [HttpGet]
-        public ActionResult<IEnumerable<Employee>> GetAll()
+        public ActionResult<IEnumerable<Employee1>> GetAll()
         {
             return employees;
         }
 
         // GET: api/employees/1
         [HttpGet("{id}")]
-        public ActionResult<Employee> GetById(int id)
+        public ActionResult<Employee1> GetById(int id)
         {
             var employee = employees.FirstOrDefault(e => e.Id == id);
             if (employee == null)
@@ -35,7 +35,7 @@ namespace HR.Controllers
 
         // POST: api/employees
         [HttpPost]
-        public ActionResult<Employee> Create(Employee employee)
+        public ActionResult<Employee1> Create(Employee1 employee)
         {
             employee.Id = employees.Max(e => e.Id) + 1;
             employees.Add(employee);

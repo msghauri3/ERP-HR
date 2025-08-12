@@ -1,6 +1,6 @@
 ﻿namespace HR.Model
 {
-    public class Employee
+    public class Employee1
     {
 
         public int Id { get; set; }

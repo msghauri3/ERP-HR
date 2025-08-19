@@ -111,3 +111,4 @@ D:\Dotnet\Core\HR_10\HR_10\obj\Debug\net6.0\HR_10.genruntimeconfig.cache
 D:\Dotnet\Core\HR_10\HR_10\obj\Debug\net6.0\ref\HR_10.dll
 D:\Dotnet\Core\HR_10\HR_10\obj\Debug\net6.0\HR_10.Reports.ReportConfiguration.resources
 D:\Dotnet\Core\HR_10\HR_10\obj\Debug\net6.0\HR_10.csproj.GenerateResource.cache
+D:\Dotnet\Core\HR_10\HR_10\obj\Debug\net6.0\HR_10.sourcelink.json

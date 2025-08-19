@@ -13,6 +13,8 @@ namespace HR_10.Models
         }
 
         public virtual DbSet<Configurations> Configurations { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; } // Add this line
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +25,17 @@ namespace HR_10.Models
 
                 entity.ToTable("Configuration");
             });
+
+
+            // Add Employee configuration
+            modelBuilder.Entity<Employee>(entity =>
+            {
+                entity.HasKey(e => e.uid);
+                entity.Property(e => e.EmployeeID).IsRequired().HasMaxLength(250);
+                entity.HasIndex(e => e.EmployeeID).IsUnique();
+                entity.Property(e => e.BasicSalary).HasDefaultValue(0.00m);
+            });
+
 
             OnModelCreatingPartial(modelBuilder);
         }
